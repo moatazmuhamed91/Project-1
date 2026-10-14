@@ -1,29 +1,58 @@
 <!doctype html>
-<head>
-  <title>NAVY</title>
-</head>
-<body>
-  <div>
-    <h1>NAVY</h1>
-    <div>
-      <hr />
-      <br />
-      <a href="https://google.com/" target="_blank">home </a>
-      <hr />
-      <br />
-      <a href="http://example.com/shop" target="_self">shop</a>
-      <hr />
-      <br />
-      <a href="http://example.com/contact" target="_self">contact</a>
-      <hr />
-      <br />
-    </div>
-    <img
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT01hVBxjBik2kLKopff8KBPaAoD5lJzWtgdxwmCF7WNQ&s=10"
-      width="500"
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>NAVY</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
     />
-    <hr />
-  </div>
-  <div>Content</div>
-  <div>Footer</div>
-</body>
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <img class="logo" src="images/logo.png" alt="NAVY logo" />
+
+      <nav class="header-links" aria-label="Main navigation">
+        <a href="test.html">Home</a>
+        <a href="#">Our Shop</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+        <button type="button">Sign in</button>
+      </nav>
+    </header>
+
+    <!-- LANDING PAGE -->
+    <section class="landing-page">
+      <div class="landing-content">
+        <span class="landing-label">DISCOVER THE UNKNOWN</span>
+
+        <h1>Find your next obsession.</h1>
+
+        <p>
+          Explore unforgettable worlds, hidden gems, and your next favorite
+          game.
+        </p>
+
+        <div class="search">
+          <input
+            type="search"
+            placeholder="Search for a game..."
+            aria-label="Search for a game"
+          />
+          <button type="button">Search</button>
+        </div>
+      </div>
+
+      <div class="landing-visual">
+        <img src="images/banner-image.jpg" alt="Featured game artwork" />
+      </div>
+    </section>
+  </body>
+</html>

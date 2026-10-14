@@ -1,0 +1,147 @@
+body {
+  background-color: #070b14;
+  color: #f3f7fc;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.header {
+  background-color: #0e1728;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+}
+
+.logo {
+  width: 100px;
+}
+
+.header-links a {
+  color: #f3f7fc;
+  padding: 8px 15px;
+  text-decoration: none;
+  border-radius: 15px;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.header-links a:hover {
+  background-color: #263752;
+}
+
+.header-links button {
+  background-color: #54e6df;
+  color: #070b14;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 15px;
+  font-family: "Space Grotesk", sans-serif;
+  cursor: pointer;
+}
+
+.header-links button:hover {
+  background-color: #8af0e8;
+}
+
+/* Landing Page */
+.landing-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 48px;
+  min-height: 70vh;
+  padding: 48px 5vw;
+  box-sizing: border-box;
+}
+
+.landing-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.landing-label {
+  display: inline-block;
+  color: #54E6DF;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 16px;
+}
+
+.landing-page h1 {
+  font-size: 56px;
+  line-height: 1.08;
+  margin: 0 0 18px;
+}
+
+.landing-page p {
+  color: #9BAAC0;
+  font-size: 17px;
+  line-height: 1.7;
+  max-width: 500px;
+  margin: 0;
+}
+
+/* Search */
+.search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  max-width: 470px;
+  margin-top: 28px;
+  padding: 6px;
+  background-color: #0E1728;
+  border: 1px solid #263752;
+  border-radius: 50px;
+}
+
+.search input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px 14px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #F3F7FC;
+  font: inherit;
+}
+
+.search input::placeholder {
+  color: #9BAAC0;
+}
+
+.search button {
+  background-color: #54E6DF;
+  color: #070B14;
+  border: none;
+  border-radius: 50px;
+  padding: 12px 20px;
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.search button:hover {
+  background-color: #8AF0E8;
+}
+
+/* Featured image */
+.landing-visual {
+  flex: 1;
+  max-width: 520px;
+}
+
+.landing-visual img {
+  display: block;
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  border: 1px solid #263752;
+  border-radius: 20px;
+}
