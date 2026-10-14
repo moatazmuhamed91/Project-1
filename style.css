@@ -145,3 +145,9 @@ h3 {
   border: 1px solid #263752;
   border-radius: 20px;
 }
+
+.game-card {
+  background-color: #0E1728;
+  padding: 20px;
+  border: 1px solid #263752;
+}
