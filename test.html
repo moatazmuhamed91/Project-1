@@ -65,7 +65,7 @@
         <article class="game-card">
           <img
             class="game-cover"
-            src="images/3.jpg"
+            src="images/top-game-02.jpg"
             alt="Featured game artwork"
           />
           <div class="game-info">
@@ -75,6 +75,53 @@
           </div>
         </article>
       </div>
+    </section>
+    <!-- YOUR JOURNEY -->
+    <section id="your-journey" class="journey-section">
+      <h2>Save your progress</h2>
+      <p>Remember where you stopped and what you want to do next.</p>
+      <form id="session-form">
+        <div class="form-group">
+          <label for="game-title">Game name</label>
+          <input
+            id="game-title"
+            name="gameTitle"
+            type="text"
+            placeholder="e.g. Assassin's Creed Mirage"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="last-checkpoint">Where did you stop?</label>
+          <input
+            id="last-checkpoint"
+            name="lastCheckpoint"
+            type="text"
+            placeholder="e.g. Finished the second mission"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="next-goal">What's your next goal?</label>
+          <input
+            id="next-goal"
+            name="nextGoal"
+            type="text"
+            placeholder="e.g. Complete the next main mission"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="session-notes">Personal notes (optional)</label>
+          <textarea
+            id="session-notes"
+            name="notes"
+            rows="4"
+            placeholder="Anything you want to remember..."
+          ></textarea>
+        </div>
+        <button type="submit">Save session</button>
+      </form>
     </section>
   </body>
 </html>
