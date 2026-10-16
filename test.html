@@ -17,7 +17,9 @@
   <body>
     <!-- HEADER -->
     <header class="header">
-      <img class="logo" src="images/logo.png" alt="NAVY logo" />
+      <a class="brand" href="#home" aria-label="NAVY home">
+        NAVY<span>.</span>
+      </a>
 
       <nav class="header-links" aria-label="Main navigation">
         <a href="test.html">Home</a>
@@ -28,34 +30,72 @@
       </nav>
     </header>
 
-    <!-- LANDING PAGE -->
-    <section class="landing-page">
-      <div class="landing-content">
-        <span class="landing-label">DISCOVER THE UNKNOWN</span>
+    <!-- NAVY WORLD SELECT -->
+    <section class="landing-page" id="home">
+      <div class="hero-atmosphere" aria-hidden="true"></div>
 
-        <h1>Find your next obsession.</h1>
+      <div class="hero-heading">
+        <p class="hero-eyebrow">NAVY / WORLD SELECT</p>
 
-        <p>
-          Explore unforgettable worlds, hidden gems, and your next favorite
-          game.
+        <h1>Choose your next world.</h1>
+
+        <p class="hero-description">
+          Five worlds. Five ways to feel something new.
         </p>
-
-        <div class="search">
-          <input
-            type="search"
-            placeholder="Search for a game..."
-            aria-label="Search for a game"
-          />
-          <button type="button">Search</button>
-        </div>
       </div>
 
-      <div class="landing-visual">
-        <img src="images/2.jpg" alt="Featured game artwork" />
+      <div class="world-stage" aria-label="Choose your game">
+        <div class="stage-ring stage-ring--outer" aria-hidden="true"></div>
+
+        <div class="stage-ring stage-ring--inner" aria-hidden="true"></div>
+
+        <!-- GAME 01 -->
+        <a class="world-card world-card--rdr2" href="#signal-picks">
+          <span class="world-card__meta">01 / OPEN WORLD</span>
+          <strong>Red Dead Redemption 2</strong>
+          <span class="world-card__action">Explore world ↗</span>
+        </a>
+
+        <!-- GAME 02 -->
+        <a class="world-card world-card--spiderman" href="#signal-picks">
+          <span class="world-card__meta">02 / SUPERHERO</span>
+          <strong>Spider-Man Remastered</strong>
+          <span class="world-card__action">Enter the city ↗</span>
+        </a>
+
+        <!-- GAME 03 -->
+        <a class="world-card world-card--forza" href="#signal-picks">
+          <span class="world-card__meta">03 / RACING</span>
+          <strong>Forza Horizon 5</strong>
+          <span class="world-card__action">Hit the road ↗</span>
+        </a>
+
+        <!-- GAME 04 -->
+        <a class="world-card world-card--pubg" href="#signal-picks">
+          <span class="world-card__meta">04 / SURVIVAL</span>
+          <strong>PUBG: Battlegrounds</strong>
+          <span class="world-card__action">Enter the match ↗</span>
+        </a>
+
+        <!-- GAME 05 -->
+        <a class="world-card world-card--nightmares" href="#signal-picks">
+          <span class="world-card__meta">05 / DARK FANTASY</span>
+          <strong>Little Nightmares</strong>
+          <span class="world-card__action">Enter the unknown ↗</span>
+        </a>
+
+        <!-- CENTRAL CHARACTER -->
+        <img
+          class="gojo-figure"
+          src="images/gojo3.png"
+          alt="Gojo Satoru illustration"
+        />
       </div>
+
+      <p class="hero-hint">EXPLORE THE WORLDS · CHOOSE YOUR NEXT EXPERIENCE</p>
     </section>
     <!-- SIGNAL PICKS -->
-    <section class="signal-picks">
+    <section id="signal-picks" class="signal-picks">
       <div class="section-heading">
         <p class="section-label">CURATED DISCOVERY</p>
         <h2>Signal Picks</h2>
