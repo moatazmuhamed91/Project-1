@@ -703,3 +703,37 @@ button:focus-visible {
     scroll-behavior: auto !important;
   }
 }
+/* RDR2 — Game Page Sections */
+.game-intro,
+.game-world,
+.game-experience,
+.game-fit {
+  padding: clamp(56px, 8vw, 100px) 6vw;
+  border-bottom: 1px solid var(--navy-border);
+}
+
+/* RDR2 — Intro Typography */
+.game-eyebrow {
+  margin: 0 0 18px;
+  color: var(--navy-accent);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+}
+
+.game-intro h1 {
+  max-width: 12ch;
+  margin: 0 0 20px;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: clamp(42px, 7vw, 88px);
+  line-height: 1.02;
+  letter-spacing: -2px;
+}
+
+.game-description {
+  max-width: 620px;
+  margin: 0;
+  color: var(--navy-muted);
+  font-size: 18px;
+  line-height: 1.8;
+}
