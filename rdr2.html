@@ -8,7 +8,7 @@
 
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body class="rdr2-page">
     <header class="header">
       <a class="brand" href="test.html#home" aria-label="NAVY home">
         NAVY<span>.</span>
@@ -21,6 +21,13 @@
     </header>
     <main>
       <section class="game-intro">
+        <img
+          class="game-intro-art"
+          src="images/rdr2-hero.jpg"
+          alt=""
+          aria-hidden="true"
+        />
+
         <p class="game-eyebrow">GAME FILE / 001</p>
 
         <h1>Red Dead Redemption 2</h1>
@@ -28,6 +35,15 @@
         <p class="game-description">
           A world shaped by freedom, loyalty, and survival.
         </p>
+
+        <div class="game-info-card">
+          <h2>THE FRONTIER</h2>
+
+          <p><span>World</span> Open-world western</p>
+          <p><span>Experience</span> Story-driven exploration</p>
+          <p><span>Pace</span> Slow and immersive</p>
+        </div>
+
         <a class="game-back-link" href="test.html#collection">
           <span aria-hidden="true">←</span>
           Back to the collection
@@ -58,10 +74,25 @@
 
         <h2>Is this your kind of world?</h2>
 
-        <p>
-          A strong choice for players who enjoy story-driven adventures,
-          exploration, and immersive open worlds.
-        </p>
+        <div class="fit-grid">
+          <article class="fit-card">
+            <h3>You may enjoy it if...</h3>
+            <ul>
+              <li>You like story-driven adventures.</li>
+              <li>You enjoy exploring at your own pace.</li>
+              <li>You care about atmosphere and characters.</li>
+            </ul>
+          </article>
+
+          <article class="fit-card">
+            <h3>Think twice if...</h3>
+            <ul>
+              <li>You prefer constant action.</li>
+              <li>You dislike long travel sections.</li>
+              <li>You want a short, fast-paced experience.</li>
+            </ul>
+          </article>
+        </div>
       </section>
     </main>
   </body>
