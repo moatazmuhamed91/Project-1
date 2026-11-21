@@ -15,13 +15,8 @@ body {
   font-family: "Space Grotesk", Arial, sans-serif;
 }
 body.game-page {
-  background:
-    radial-gradient(
-      ellipse at 15% 10%,
-      rgba(233, 198, 160, 0.12),
-      transparent 40%
-    ),
-    var(--game-page);
+  background: var(--game-dark);
+  overscroll-behavior-y: none;
 }
 h1,
 h2,
@@ -1155,11 +1150,11 @@ a:focus-visible {
 
 .game-page .game-frame {
   display: flex;
-  min-height: 850px;
-  margin: 24px;
+  min-height: 100vh;
+  margin: 0;
   overflow: hidden;
-  border: 1px solid var(--game-line);
-  border-radius: 36px;
+  border: 0;
+  border-radius: 0;
   background: #080b12;
 }
 
