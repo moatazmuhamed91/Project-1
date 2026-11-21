@@ -52,6 +52,10 @@ a:focus-visible {
   height: 1px;
   opacity: 0;
 }
+.sidebar-toggle:focus-visible ~ .library-sidebar .rail-menu {
+  outline: 2px solid #b9dff5;
+  outline-offset: -2px;
+}
 
 .library-sidebar {
   position: fixed;
@@ -1235,7 +1239,8 @@ a:focus-visible {
   min-width: 0;
   flex: 1;
   flex-direction: column;
-  min-height: 850px;
+  min-height: calc(100vh - 2px);
+  max-height: 920px;
   overflow: hidden;
   padding: 0 5% 50px 64px;
 }
