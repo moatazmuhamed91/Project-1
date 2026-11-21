@@ -26,8 +26,22 @@
       <!-- GAME FRAME -->
       <div class="game-frame">
         <!-- SIDEBAR -->
+        <input
+          type="checkbox"
+          class="game-sidebar-toggle"
+          id="game-sidebar-toggle"
+        />
+
         <aside class="game-sidebar">
-          <a class="game-logo" href="index.html" aria-label="NAVY home"> N </a>
+          <label
+            class="game-rail-menu"
+            for="game-sidebar-toggle"
+            aria-label="Toggle menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
 
           <nav aria-label="Quick navigation">
             <a
@@ -37,49 +51,54 @@
               aria-label="Home"
             >
               <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M4 11 12 4l8 7v9H4z" />
-                <path d="M10 20v-6h4v6" />
+                <path
+                  d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"
+                />
               </svg>
+              <span class="game-nav-label">Home</span>
             </a>
 
             <a
               class="game-icon-link"
               href="index.html#collection"
-              title="Collection"
-              aria-label="Collection"
+              title="All games"
+              aria-label="All games"
             >
               <svg viewBox="0 0 24 24" aria-hidden="true">
-                <rect x="4" y="4" width="6.5" height="6.5" rx="1" />
-                <rect x="13.5" y="4" width="6.5" height="6.5" rx="1" />
-                <rect x="4" y="13.5" width="6.5" height="6.5" rx="1" />
-                <rect x="13.5" y="13.5" width="6.5" height="6.5" rx="1" />
+                <rect x="3" y="3" width="7" height="7" rx="1.5" />
+                <rect x="14" y="3" width="7" height="7" rx="1.5" />
+                <rect x="3" y="14" width="7" height="7" rx="1.5" />
+                <rect x="14" y="14" width="7" height="7" rx="1.5" />
               </svg>
+              <span class="game-nav-label">All games</span>
             </a>
 
             <a
               class="game-icon-link"
-              href="index.html#approach"
-              title="How NAVY works"
-              aria-label="How NAVY works"
+              href="forza.html"
+              title="Next: Forza 5"
+              aria-label="Next: Forza 5"
             >
               <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M12 3 21 12 12 21 3 12z" />
+                <path d="M5 12h14" />
+                <path d="m13 6 6 6-6 6" />
               </svg>
+              <span class="game-nav-label">Next: Forza 5</span>
             </a>
           </nav>
 
           <div class="game-sidebar-bottom">
             <a
               class="game-icon-link"
-              href="index.html#collection"
-              title="Back to all games"
-              aria-label="Back to all games"
+              href="rdr2.html"
+              title="Prev: RDR2"
+              aria-label="Prev: RDR2"
             >
               <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path d="M14 5H6v14h8" />
-                <path d="M10 12h10" />
-                <path d="m17 9 3 3-3 3" />
+                <path d="M19 12H5" />
+                <path d="m11 18-6-6 6-6" />
               </svg>
+              <span class="game-nav-label">Prev: RDR2</span>
             </a>
           </div>
         </aside>
@@ -90,7 +109,7 @@
           <div class="game-main">
             <img
               class="game-intro-art"
-              src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1817070/header.jpg"
+              src="images/spiderman.jpg"
               alt=""
               aria-hidden="true"
             />
@@ -171,8 +190,9 @@
 
             <figure class="game-world-visual">
               <img
-                src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1817070/header.jpg"
+                src="images/spiderman.jpg"
                 alt="Spider-Man swinging across Manhattan"
+                loading="lazy"
               />
 
               <figcaption>MANHATTAN / MARVEL'S NEW YORK</figcaption>
