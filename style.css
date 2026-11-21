@@ -788,6 +788,8 @@ a:focus-visible {
   .hero-main-link {
     margin-top: 18px;
   }
+}
+@media (max-height: 820px) and (min-width: 821px) {
   .game-page .game-frame,
   .game-page .game-main {
     min-height: 680px;
@@ -1666,6 +1668,7 @@ a:focus-visible {
 
   .game-page .game-nav {
     gap: 20px;
+    padding-top: 24px;
   }
 
   .game-page .game-nav a {
@@ -1713,19 +1716,7 @@ a:focus-visible {
       linear-gradient(to right, rgba(8, 11, 18, 0.58), rgba(8, 11, 18, 0.36)),
       linear-gradient(to top, rgba(8, 11, 18, 0.88), rgba(8, 11, 18, 0.12));
   }
-  .game-page .game-progress {
-    width: calc(100% - 30px);
-    margin-left: 15px;
-  }
 
-  .game-page .hud-ring {
-    width: 90px;
-    height: 90px;
-  }
-
-  .game-page .hud-ring strong {
-    font-size: 24px;
-  }
   .game-page .game-nav {
     padding-top: 24px;
   }
