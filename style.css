@@ -12,7 +12,6 @@ body {
   margin: 0;
   background: #030918;
   color: #f7eaea;
-  font-family: "Space Grotesk", Arial, sans-serif;
 }
 
 /* Shared Sidebar (Home + Game Pages) */
@@ -359,13 +358,12 @@ body {
   gap: 24px;
   margin-top: 24px;
   padding: 15px 20px;
-
-  color: #080b12;
-  background: #b9dff5;
+  color: #070b14;
+  background: #83a6ba;
+  text-decoration: none;
   font-size: 12px;
   font-weight: bold;
-  text-decoration: none;
-  box-shadow: 0 0 24px rgba(185, 223, 245, 0.35);
+  box-shadow: 0 0 24px rgba(159, 191, 210, 0.35);
   transition:
     box-shadow 0.25s ease,
     background 0.25s ease;
@@ -374,56 +372,6 @@ body {
 .hero-main-link:hover {
   background: #f3f5f8;
   box-shadow: 0 0 36px rgba(243, 245, 248, 0.5);
-}
-
-.hero-main-link span {
-  display: inline-block;
-}
-
-.hero-main-link:hover span {
-  transform: translate(3px, -3px);
-}
-
-.hero-stamp {
-  position: absolute;
-  top: 17%;
-  right: 4%;
-  z-index: 2;
-
-  padding: 6px 12px;
-  border: 1px solid rgba(243, 245, 248, 0.2);
-  border-radius: 999px;
-  background: rgba(8, 11, 18, 0.65);
-
-  font-size: 10px;
-  letter-spacing: 1.5px;
-}
-
-.hero-next {
-  position: absolute;
-  top: 46%;
-  right: 4%;
-  z-index: 2;
-
-  display: flex;
-  width: 84px;
-  height: 84px;
-  align-items: center;
-  justify-content: center;
-
-  border: 1.5px solid #f3f5f8;
-  border-radius: 50%;
-  color: #f3f5f8;
-  background: rgba(8, 11, 18, 0.72);
-  font-size: 26px;
-  text-decoration: none;
-}
-
-.hero-next:hover {
-  color: #080b12;
-  background: #b9dff5;
-  border-color: #b9dff5;
-  transform: translateX(4px);
 }
 
 /* Bottom cards */
@@ -472,11 +420,6 @@ body {
 
 .hero-explore:hover {
   background: #b9dff5;
-}
-
-.hero-explore > span:first-child {
-  font-size: 10px;
-  letter-spacing: 1px;
 }
 
 .hero-explore strong {
@@ -565,6 +508,11 @@ body {
 
 /* Games */
 
+.collection {
+  padding: 70px;
+  display: grid;
+}
+
 .collection-grid {
   display: grid;
   gap: 20px;
@@ -574,9 +522,7 @@ body {
 
 .collection-card {
   display: grid;
-  justify-content: auto;
-  overflow: hidden;
-  padding: 29px;
+  padding: 30px;
   min-width: 0;
   min-height: 200px;
   border: 3px solid rgb(16, 16, 30);
@@ -584,28 +530,16 @@ body {
   background-color: #0d121e;
   background-position: center;
   background-size: cover;
-
   transition:
     transform 0.3s ease,
     border-color 0.3s ease,
     box-shadow 0.3s ease;
 }
 
-.collection-card > * {
-  position: relative;
-}
-
 .collection-card:hover {
   border-color: #b9dff5;
   transform: translateY(-4px);
   box-shadow: 0 18px 35px rgba(0, 0, 0, 0.3);
-}
-
-.collection-card p {
-  margin: 0;
-  color: #aab5c5;
-  font-size: 14px;
-  line-height: 1.8;
 }
 
 .collection-card .collection-card__meta {
@@ -639,14 +573,6 @@ body {
   text-decoration: none;
 }
 
-.collection-card__link span {
-  display: inline-block;
-}
-
-.collection-card:hover .collection-card__link span {
-  transform: translate(3px, -3px);
-}
-
 .collection-card--rdr2 {
   background-image:
     linear-gradient(to right, rgba(8, 11, 18, 0.94), rgba(8, 11, 18, 0.5)),
@@ -676,26 +602,6 @@ body {
   background-image:
     linear-gradient(to right, rgba(8, 11, 18, 0.94), rgba(8, 11, 18, 0.5)),
     url("https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/424840/header.jpg");
-}
-
-.collection-card--rdr2::before {
-  background: #e9c6a0;
-}
-
-.collection-card--spiderman::before {
-  background: #ffaaa9;
-}
-
-.collection-card--forza::before {
-  background: #a7e6d7;
-}
-
-.collection-card--ghost::before {
-  background: #f3c487;
-}
-
-.collection-card--nightmares::before {
-  background: #d3bff1;
 }
 
 /* How NAVY works */
