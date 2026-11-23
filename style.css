@@ -256,6 +256,10 @@ body {
   font-weight: bold;
   letter-spacing: 2px;
 }
+.collection .section-heading {
+  max-width: 1000px;
+  margin: 0 0 32px;
+}
 
 .section-heading,
 .approach-intro {
