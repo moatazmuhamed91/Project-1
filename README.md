@@ -1,43 +1,45 @@
-# NAVY — Find Your Next World
+# NAVY
 
-**Look beyond the title.**
+## Find Your Next World
 
-NAVY is a static front-end website built with plain HTML and CSS that helps players choose their next game by the **experience, pace, and mood** rather than genre alone. Each game page highlights what makes its world distinct alongside honest strengths and trade-offs (_"You may enjoy it if..."_ / _"Think twice if..."_).
+NAVY is a static game-discovery website built with HTML and CSS. It presents games through their worlds, atmosphere, pace, and gameplay, helping visitors decide what they might enjoy playing next.
 
-**Live Demo:** https://moatazmuhamed91.github.io/Project-1/
+Live demo: https://moatazmuhamed91.github.io/Project-1/
 
-## Included Games
+## Games
 
-1. **Red Dead Redemption 2** (`rdr2.html`) — Slow, story-driven frontier exploration
-2. **Marvel's Spider-Man Remastered** (`spiderman.html`) — Fast traversal and momentum-driven combat
-3. **Forza Horizon 5** (`forza.html`) — Flexible, drop-in open-road racing
-4. **Ghost of Tsushima** (`ghost.html`) — Measured samurai combat and stealth
-5. **Little Nightmares** (`nightmares.html`) — Short, tense atmospheric puzzle-horror
+- Red Dead Redemption 2
+- Marvel's Spider-Man Remastered
+- Forza Horizon 5
+- Ghost of Tsushima
+- Little Nightmares
 
-## Highlights
+## Features
 
-- **Zero JavaScript & Zero Frameworks:** Built strictly with semantic HTML5 and a single `style.css`.
-- **Per-Game Visual Themes:** CSS custom properties dynamically shift accent colors, surfaces, borders, and expanded sidebar panels across all 5 game pages.
-- **Unified Collapsible Sidebar:** Fixed full-height sidebar across home and game pages using a hidden checkbox (`:checked`) with keyboard focus support (`:focus-visible`).
-- **Responsive Design:** Tested for standard desktops, short laptop viewports (`1530x750`), tablets, and mobile screens.
+- A home page with a two-column game collection.
+- Individual game pages with descriptions, artwork, and player-fit sections.
+- Different color themes for each game using CSS custom properties.
+- A fixed icon sidebar for navigation.
+- Local image assets and CSS hover effects.
+- No JavaScript or frameworks.
 
-## Project Structure
+## Built With
 
-```text
-├── index.html
-├── rdr2.html
-├── spiderman.html
-├── forza.html
-├── ghost.html
-├── nightmares.html
-├── style.css
-├── images/
-│   ├── gojo.jpg
-│   ├── rdr2-card.jpg
-│   ├── rdr2-hero.jpg
-│   ├── spiderman.jpg
-│   ├── forza.jpg
-│   ├── ghost.jpg
-│   └── nightmares.jpg
-└── README.md
-```
+- HTML
+- CSS
+
+## Recent Changes
+
+- Reworked the home-page collection layout and card styles.
+- Replaced the expandable checkbox-based sidebar with a simpler fixed icon rail.
+- Reworked the home-page header navigation styles.
+- Updated game-card image paths to local assets.
+- Removed the old sidebar toggle rules and related unused code.
+
+## AI Assistance
+
+I used AI for ideas, HTML/CSS explanations, and generating parts of the code. I typed and edited the code myself while learning from its examples and guidance.
+
+## Run Locally
+
+Download or clone the repository, keep the files and images folder together, and open index.html in a browser.
