@@ -28,18 +28,6 @@ body {
   overflow-x: hidden;
 }
 
-.game-page .game-sidebar-toggle {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  opacity: 0;
-}
-
-.game-page .game-sidebar-toggle:focus-visible .game-sidebar {
-  outline: 2px solid var(--game-accent);
-  outline-offset: -2px;
-}
-
 .library-sidebar,
 .game-page .game-sidebar {
   position: fixed;
@@ -61,40 +49,6 @@ body {
     width 0.28s cubic-bezier(0.22, 1, 0.36, 1),
     background 0.28s ease,
     border-color 0.28s ease;
-}
-
-.game-page .game-rail-menu {
-  display: flex;
-  width: 100%;
-  height: 76px;
-  flex-shrink: 0;
-  flex-direction: column;
-  justify-content: center;
-  gap: 6px;
-  padding-left: 22px;
-  cursor: pointer;
-}
-
-.game-page .game-rail-menu span {
-  display: block;
-  width: 19px;
-  height: 1.5px;
-  background: #f3f5f8;
-  transition:
-    width 0.22s ease,
-    background 0.22s ease;
-}
-
-.game-page .game-rail-menu span:nth-child(2) {
-  width: 13px;
-}
-
-.game-page .game-rail-menu span:nth-child(3) {
-  width: 8px;
-}
-
-.game-page .game-rail-menu:hover span {
-  width: 19px;
 }
 
 .rail-links,
@@ -164,40 +118,6 @@ body {
 .game-page .game-nav-label {
   display: none;
   white-space: nowrap;
-}
-
-.game-page .game-sidebar-toggle:checked ~ .game-sidebar {
-  width: 215px;
-  align-items: stretch;
-  background: var(--game-panel);
-  backdrop-filter: blur(10px);
-  border-right-color: var(--game-line);
-}
-
-.sidebar-toggle:checked ~ .library-sidebar .rail-menu,
-.game-page .game-sidebar-toggle:checked ~ .game-sidebar .game-rail-menu {
-  padding-left: 24px;
-}
-
-.sidebar-toggle:checked ~ .library-sidebar .rail-links,
-.game-page .game-sidebar-toggle:checked ~ .game-sidebar nav {
-  padding: 0 12px;
-}
-
-.sidebar-toggle:checked ~ .library-sidebar .rail-bottom,
-.game-page .game-sidebar-toggle:checked ~ .game-sidebar .game-sidebar-bottom {
-  padding: 14px 12px 20px;
-}
-
-.sidebar-toggle:checked ~ .library-sidebar .rail-link,
-.game-page .game-sidebar-toggle:checked ~ .game-sidebar .game-icon-link {
-  justify-content: flex-start;
-  padding: 0 12px;
-}
-
-.sidebar-toggle:checked ~ .library-sidebar .rail-label,
-.game-page .game-sidebar-toggle:checked ~ .game-sidebar .game-nav-label {
-  display: inline;
 }
 
 /* Main picture */
@@ -410,13 +330,9 @@ body {
 }
 
 .collection-card h3 {
-  margin: 0 0 12px;
-  font-size: 25px;
+  margin: 0 0 13px;
+  font-size: 30px;
   line-height: 1.3;
-}
-
-.collection-card--rdr2 h3 {
-  font-size: 34px;
 }
 
 .collection-card__link {
