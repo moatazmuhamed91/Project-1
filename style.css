@@ -15,7 +15,7 @@ body {
   font-family: sans-serif;
 }
 
-/* Shared Sidebar (Home + Game Pages) */
+/* Sidebar */
 
 .app-shell {
   position: relative;
@@ -28,17 +28,11 @@ body {
   overflow-x: hidden;
 }
 
-.sidebar-toggle,
 .game-page .game-sidebar-toggle {
   position: absolute;
   width: 1px;
   height: 1px;
   opacity: 0;
-}
-
-.sidebar-toggle:focus-visible .library-sidebar {
-  outline: 2px solid #b9dff5;
-  outline-offset: -2px;
 }
 
 .game-page .game-sidebar-toggle:focus-visible .game-sidebar {
@@ -69,7 +63,6 @@ body {
     border-color 0.28s ease;
 }
 
-.rail-menu,
 .game-page .game-rail-menu {
   display: flex;
   width: 100%;
@@ -82,7 +75,6 @@ body {
   cursor: pointer;
 }
 
-.rail-menu span,
 .game-page .game-rail-menu span {
   display: block;
   width: 19px;
@@ -93,17 +85,14 @@ body {
     background 0.22s ease;
 }
 
-.rail-menu span:nth-child(2),
 .game-page .game-rail-menu span:nth-child(2) {
   width: 13px;
 }
 
-.rail-menu span:nth-child(3),
 .game-page .game-rail-menu span:nth-child(3) {
   width: 8px;
 }
 
-.rail-menu:hover span,
 .game-page .game-rail-menu:hover span {
   width: 19px;
 }
@@ -177,14 +166,6 @@ body {
   white-space: nowrap;
 }
 
-.sidebar-toggle:checked ~ .library-sidebar {
-  width: 215px;
-  align-items: stretch;
-  background: rgba(8, 11, 18, 0.92);
-  backdrop-filter: blur(10px);
-  border-right-color: #263752;
-}
-
 .game-page .game-sidebar-toggle:checked ~ .game-sidebar {
   width: 215px;
   align-items: stretch;
@@ -220,7 +201,30 @@ body {
 }
 
 /* Main picture */
+.hero-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 20px 30px 20px 80px;
+}
+.hero-nav a {
+  color: #f3f5f8;
+  text-decoration: none;
+}
 
+.hero-nav-links {
+  display: flex;
+  gap: 24px;
+  margin-left: auto;
+}
+.hero-nav-brand {
+  font-size: 30px;
+  font-weight: bold;
+}
 .hero-stage {
   position: relative;
   height: calc(100vh - 56px);
